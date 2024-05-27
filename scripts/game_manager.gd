@@ -1,7 +1,7 @@
 extends Node
 
 var score = 0
-@onready var label = $Label
+@onready var label = $"../HUD/Label"
 
 func add_point():
 	score += 1
