@@ -4,7 +4,9 @@ extends Resource
 
 signal item_changed(indexes)
 
-@export  var items: Array[Item] = [
+var drag_item = null
+
+@export var items: Array[Item] = [
 	null, null, null, null, null, null, null, null, null
 ]
 

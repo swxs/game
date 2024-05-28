@@ -4,7 +4,4 @@ extends Resource
 
 @export var name:String
 @export var texture:Texture
-@export var max_count:int
-
-func add_item():
-	pass
+@export var amount:int = 1

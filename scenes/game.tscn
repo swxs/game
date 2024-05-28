@@ -9,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://cw3qw6gytra8h" path="res://scenes/kill_zone.tscn" id="5_tywqq"]
 [ext_resource type="PackedScene" uid="uid://dfabikti4exbm" path="res://scenes/slime.tscn" id="6_kj8o0"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r1bpm"]
+distance = 38.0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6xelo"]
 texture = ExtResource("1_bvhun")
 0:0/0 = 0
@@ -450,9 +453,6 @@ _data = {
 "move": SubResource("Animation_4ul8h")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r1bpm"]
-distance = 38.0
-
 [node name="Game" type="Node2D"]
 position = Vector2(-1, 0)
 
@@ -472,6 +472,12 @@ limit_left = 0
 limit_bottom = 100
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="KillZone" parent="." instance=ExtResource("5_tywqq")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(0, 120)
+shape = SubResource("WorldBoundaryShape2D_r1bpm")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_bmj0q")
@@ -536,12 +542,6 @@ position = Vector2(119, -12)
 
 [node name="Slime2" parent="Slimes" instance=ExtResource("6_kj8o0")]
 position = Vector2(568, -30)
-
-[node name="KillZone" parent="." instance=ExtResource("5_tywqq")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
-position = Vector2(0, 120)
-shape = SubResource("WorldBoundaryShape2D_r1bpm")
 
 [node name="player" parent="." instance=ExtResource("1_q7sqi")]
 position = Vector2(25, 0)
