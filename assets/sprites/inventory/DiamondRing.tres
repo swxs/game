@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dn3cxay8wy5a4"]
+
+[ext_resource type="Script" path="res://scripts/inventory/item.gd" id="1_smbgw"]
+[ext_resource type="Texture2D" uid="uid://bl5jqsmygwsnb" path="res://assets/sprites/inventory/DiamondRing.png" id="2_avcid"]
+
+[resource]
+script = ExtResource("1_smbgw")
+name = "DiamondRing"
+texture = ExtResource("2_avcid")
+max_count = 1

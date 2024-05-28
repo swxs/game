@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=5 format=3 uid="uid://bj7k6conribgl"]
+
+[ext_resource type="Resource" uid="uid://dn3cxay8wy5a4" path="res://assets/sprites/inventory/DiamondRing.tres" id="1_lemxj"]
+[ext_resource type="Resource" uid="uid://b5awjn2j825hd" path="res://assets/sprites/inventory/Sword.tres" id="2_djjhl"]
+[ext_resource type="Resource" uid="uid://clutnqlwsw82x" path="res://assets/sprites/inventory/Potion.tres" id="2_iydn1"]
+[ext_resource type="Script" path="res://scripts/inventory/inventory.gd" id="3_gvkbn"]
+
+[resource]
+script = ExtResource("3_gvkbn")
+items = Array[Resource("res://scripts/inventory/item.gd")]([ExtResource("1_lemxj"), ExtResource("2_djjhl"), null, ExtResource("2_iydn1"), ExtResource("2_iydn1"), null, null, null, ExtResource("2_iydn1")])

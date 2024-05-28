@@ -458,6 +458,7 @@ position = Vector2(-1, 0)
 
 [node name="HUD" parent="." instance=ExtResource("1_3hhlw")]
 unique_name_in_owner = true
+visible = false
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true

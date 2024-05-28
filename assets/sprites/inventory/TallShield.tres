@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ns7ek3k3mup6"]
+
+[ext_resource type="Script" path="res://scripts/inventory/item.gd" id="1_smbgw"]
+[ext_resource type="Texture2D" uid="uid://ds6123gqd4x2a" path="res://assets/sprites/inventory/TallShield.png" id="2_6dx57"]
+
+[resource]
+script = ExtResource("1_smbgw")
+name = "TallShield"
+texture = ExtResource("2_6dx57")
+max_count = 1
